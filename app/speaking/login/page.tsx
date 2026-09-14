@@ -1,5 +1,2 @@
-import SectionPage from '@/components/section-page'
-
-export default function Page() {
-  return <SectionPage type="speakingLogin" />
-}
+import { redirect } from 'next/navigation'
+export default function Page(){ redirect('/speaking/mock') }

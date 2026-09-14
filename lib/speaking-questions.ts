@@ -179,9 +179,9 @@ const PART3_TABLES: TableSpec[] = [
 export function resolveSteps(): Step[] {
   // Part 1.1 — har slotdan random bitta savol
   const p11Items: Item[] = [
-    { savolNo: 1, prompt: [pickRandom(POOL_SLOT1)], seconds: 30, prep: 0 },
-    { savolNo: 2, prompt: [pickRandom(POOL_SLOT2)], seconds: 30, prep: 0 },
-    { savolNo: 3, prompt: [pickRandom(POOL_SLOT3)], seconds: 30, prep: 0 },
+    { savolNo: 1, prompt: [pickRandom(POOL_SLOT1)], seconds: 30, prep: 5 },
+    { savolNo: 2, prompt: [pickRandom(POOL_SLOT2)], seconds: 30, prep: 5 },
+    { savolNo: 3, prompt: [pickRandom(POOL_SLOT3)], seconds: 30, prep: 5 },
   ]
 
   // Part 1.2 — sequential
@@ -190,8 +190,8 @@ export function resolveSteps(): Step[] {
   const ps = PART1_PHOTO_SETS[photoIdx]
   const p12Items: Item[] = [
     { savolNo: 4, prompt: [ps.q4], intro: ps.intro, visual: ps.visual, seconds: 45, prep: 10 },
-    { savolNo: 5, prompt: [ps.q5], visual: ps.visual, seconds: 30, prep: 0 },
-    { savolNo: 6, prompt: [ps.q6], visual: ps.visual, seconds: 30, prep: 0 },
+    { savolNo: 5, prompt: [ps.q5], visual: ps.visual, seconds: 30, prep: 5 },
+    { savolNo: 6, prompt: [ps.q6], visual: ps.visual, seconds: 30, prep: 5 },
   ]
 
   // Part 2 — sequential
